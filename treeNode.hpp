@@ -1,21 +1,22 @@
 #pragma once
 
 #include "treeList.hpp"
+#include <iostream>
 
 class TreeList;
 class TreeNode {
 private:
 	TreeNode* parent;
-	int data; //data can be of any type
+	char data; //data can be of any type
 	TreeList* children;
 public:
 	TreeNode();
-	TreeNode(int val);
+	TreeNode(char val);
 	void setParent(TreeNode* node);
-	void setData(int val);
+	void setData(char val);
 	void setChildren(TreeList* list);
 	TreeNode* getParent();
-	int getData();
+	char getData();
 	TreeList* getChildren();
 	virtual ~TreeNode();
 };

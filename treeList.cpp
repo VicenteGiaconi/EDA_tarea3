@@ -29,7 +29,7 @@ void TreeList::removeFirst(){
 }
 
 
-void TreeList::remove(int val){
+void TreeList::remove(char val){
 	TreeListNode* ptr = head;
 	TreeListNode* ptr_prev = nullptr;
 	while (ptr != nullptr){
@@ -59,7 +59,7 @@ void TreeList::removeAll(){
 	}
 }
 
-TreeNode* TreeList::find(int val){
+TreeNode* TreeList::find(char val){
 	TreeListNode* ptr = head;
 	while ((ptr != nullptr) && ((ptr->getData())->getData() != val)){
 		ptr = ptr->getNext();

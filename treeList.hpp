@@ -1,5 +1,6 @@
 #pragma once
 
+#include <iostream>
 #include "treeListNode.hpp"
 
 class TreeNode;
@@ -12,10 +13,10 @@ public:
 	TreeListNode* getHead();
 	void insertFirst(TreeNode* treeNode);
 	void removeFirst();
-	void remove(int val);
+	void remove(char val);
 	void removeAll();
 	bool isEmpty();
-	TreeNode* find(int val);
+	TreeNode* find(char val);
 	void print();
 	virtual ~TreeList();
 };
